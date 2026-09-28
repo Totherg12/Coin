@@ -1,0 +1,16 @@
+{
+  "name": "eterna-discord-bot",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Bot Discord para recompensar mensagens com EternaCoins no Minecraft Bedrock.",
+  "type": "module",
+  "scripts": {
+    "start": "node src/index.js",
+    "check": "node --check src/index.js"
+  },
+  "dependencies": {
+    "discord.js": "^14.26.2",
+    "dotenv": "^16.6.1",
+    "rcon-client": "^4.2.5"
+  }
+}

@@ -1,0 +1,25 @@
+services:
+  - type: worker
+    name: eterna-discord-bot
+    runtime: node
+    buildCommand: npm install --omit=dev
+    startCommand: npm start
+    envVars:
+      - key: DISCORD_TOKEN
+        sync: false
+      - key: DISCORD_CLIENT_ID
+        sync: false
+      - key: DISCORD_GUILD_ID
+        sync: false
+      - key: RCON_HOST
+        sync: false
+      - key: RCON_PORT
+        value: "19132"
+      - key: RCON_PASSWORD
+        sync: false
+      - key: WORDS_PER_REWARD
+        value: "10"
+      - key: COINS_PER_REWARD
+        value: "5"
+      - key: STATE_FILE
+        value: /var/lib/eterna/state.json
