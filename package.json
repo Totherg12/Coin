@@ -5,7 +5,7 @@
   "description": "Bot Discord para recompensar mensagens com EternaCoins no Minecraft Bedrock.",
   "type": "module",
   "scripts": {
-    "start": "node src/index.js",
+    "start": "node index.js",
     "check": "node --check src/index.js"
   },
   "dependencies": {
